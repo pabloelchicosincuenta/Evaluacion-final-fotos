@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+body{
+  font-family: "Dancing Script";
+  background-color: #02010a;
+}
+header{
+  border-radius: 10px 10px 0 0;
+  background-color: #5b7989;
+  margin: 5%;
+  color: white;
+
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+img{
+  box-shadow: 2px 2px #02010a;
+}
+header .contenedor{
+  display: flex;
+  display: -webkit-flex;
+}
+header .contenedor #titulo{
+  width: 60%;
+}
+header .contenedor #titulo h1{
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+header .contenedor #menu{
+  width: 40%;
+  padding-top: 20px;
+}
+#menu ul{
+  float: right;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+}
+#menu ul li{
+  list-style: none;
+  padding: 10px;
+}
+#menu ul li a{
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+#menu ul li a .link{
+  text-decoration: underline;
+}
+#cuerpo #contenedor-central{
+  background: #82c3a6;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#cuerpo .contenedor-central img{
+  width: 90%;
+}
+.contenedor{
+  width: 90%;
+  margin: 0 auto;
+}
+#cuerpo{
+  margin: 0px;
+}
+#cuerpo #contenedor-secundario{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  background: #d5c75f;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+#cuerpo #contenedor-secundario img{
+  width: 80%;
+}
+#cuerpo #contenedor-secundario .imagen{
+  width: 60%;
+  text-align: center;
+}
+#cuerpo #contenedor-secundario #imagen-izquierda img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+}
+#cuerpo #contenedor-secundario #imagen-derecha img:hover{
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+footer{
+  background: #c6d5c5;
+  padding: 0px;
+  margin: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+footer img{
+  box-shadow: none;
+}
+footer .contenedor{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 90%;
+}
+footer .contenedor div{
+  flex-grow: 1;
+}
+#cuerpo #contenedor-grid-3{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+#cuerpo #contenedor-grid-3 .item{
+  width: 33.3%;
+  text-align: center;
+}
+#cuerpo #contenedor-grid-3 .item img{
+  width: 95%;
+  margin-top: 20px;
+}
+#paisajes{
+  width: 100%;
+  background: #d5c75f;
+  padding-bottom: 10px;
+}
+.item:nth-child(2n) img{
+  border: 1px solid red;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.item:nth-child(1) img{
+  filter: blur(10px);
+}
+.item:nth-child(3) img{
+  filter: sepia(90%);
+}
+@media screen and (max-width:900px){
+
+  header.contenedor #titulo h1{
+    width: 100%;
+    text-align: center;
+  }
+header .contenedor {
+  flex-direction: column;
+}
+header.contenedor #titulo{
+  width: 100%;
+}
+header .contenedor #menu ul{
+  float: none;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: stretch;
+}
+header .contenedor #menu ul li{
+  text-align: center;
+}
+header .contenedor #menu ul li:nth-child(1) {
+  flex-grow: 1;
+}
+header .contenedor #menu ul li:nth-child(2) {
+  flex-grow: 1;
+}
+header .contenedor #menu ul li:nth-child(3) {
+  flex-grow: 1;
+}
+#cuerpo #contenedor-secundario{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+#cuerpo #contenedor-secundario .imagen{
+  width: 100%;
+  text-align: center;
+}
+#cuerpo #contenedor-secundario img{
+  width: 90%;
+  margin-bottom: 10px;
+}
+footer .contenedor{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  width: 90%;
+}
+#cuerpo .contenedor-grid-3 {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  width: 90%;
+}
+#cuerpo .contenedor-grid-3 .item{
+  width: 100%;
+  text-align: center;
+}
+#cuerpo .contenedor-grid-3 .item img{
+  width: 100%;
+}
+}
